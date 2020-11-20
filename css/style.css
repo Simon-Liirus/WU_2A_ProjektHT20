@@ -1,0 +1,13 @@
+#grid_wrapper{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    grid-template-rows: 2fr 8fr 4fr;
+    grid-template-areas:
+    "hed hed hed hed"
+    "as1 ar1 ar2 as2"
+    "as1 fot fot as2";
+
+
+}
