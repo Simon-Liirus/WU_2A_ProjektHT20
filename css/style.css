@@ -9,5 +9,28 @@
     "as1 ar1 ar2 as2"
     "as1 fot fot as2";
 
-
+}
+header{
+    grid-area:hed;
+    background-color:green;
+}
+#aside1{
+    grid-area:as1;
+    background-color:red;
+}
+#aside2{
+    grid-area:as2;
+    background-color:red;
+}
+#article1{
+    grid-area:ar1;
+    background-color:blue;
+}
+#article2{
+    grid-area:ar2;
+    background-color:blue;
+}
+footer{
+    grid-area:fot;
+    background-color:brown;
 }
