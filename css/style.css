@@ -1,4 +1,9 @@
-#grid_wrapper{
+*{
+    padding:0px;
+    margin:0px;
+}
+
+#start_grid_wrapper{
     display:grid;
     width:100vw;
     height:100vh;
@@ -8,19 +13,34 @@
     "hed hed hed hed"
     "as1 ar1 ar2 as2"
     "as1 fot fot as2";
-
 }
-header{
+#header_flex{
     grid-area:hed;
     background-color:green;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 #aside1{
     grid-area:as1;
     background-color:red;
+    width:300px;
+    height:522px;
+    overflow:hidden;
+    display: flex;
+align-items: center;
+justify-content: center;
 }
 #aside2{
     grid-area:as2;
-    background-color:red;
+    background-color:lightcoral;
+    overflow:hidden;
+    display: flex;
+align-items: center;
+justify-content: center;
+width:300px;
+height:522px;
 }
 #article1{
     grid-area:ar1;
@@ -28,9 +48,55 @@ header{
 }
 #article2{
     grid-area:ar2;
-    background-color:blue;
+    background-color:cyan;
 }
-footer{
+#start_footer{
     grid-area:fot;
     background-color:brown;
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+#mat_grid_wrapper{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+    "hea hea hea"
+    "as1 art as2"
+    "foo foo as2"
+}
+#mat_huvud{
+    grid-area: hea;
+    background-color: green;
+    font-size: 42px;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+#tillbaks_till_huvud{
+    grid-area:as1;
+    background-color:lightskyblue;
+    font-size:32px;
+    display: flex;
+align-items: center;
+justify-content: center
+}
+#mat_ap_bild{
+    grid-area:as2;
+    background-color: lightsalmon;
+}
+#mat_article{
+    grid-area: art;
+    background-color: yellow;
+}
+#mat_ap_animationer{
+    grid-area:foo;
+    background-color:blue;
 }
