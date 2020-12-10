@@ -1,63 +1,103 @@
 *{
     padding:0px;
     margin:0px;
+    
 }
 
 #start_grid_wrapper{
     display:grid;
     width:100vw;
     height:100vh;
-    grid-template-columns: 2fr 3fr 3fr 2fr;
-    grid-template-rows: 2fr 8fr 4fr;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 3fr 8fr 3fr;
     grid-template-areas:
-    "hed hed hed hed"
-    "as1 ar1 ar2 as2"
-    "as1 fot fot as2";
+    "hed hed hed"
+    "as1 nav as2"
+    "as1 fot as2";
 }
+
 #header_flex{
     grid-area:hed;
-    background-color:green;
+    background-image: url("../img/ijwtbc-mukbang.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Cursive;
 }
 #aside1{
     grid-area:as1;
     background-color:red;
     width:300px;
-    height:522px;
+    height:479px;
     overflow:hidden;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 #aside2{
     grid-area:as2;
     background-color:lightcoral;
     overflow:hidden;
     display: flex;
-align-items: center;
-justify-content: center;
-width:300px;
-height:522px;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:479px;
 }
-#article1{
-    grid-area:ar1;
-    background-color:blue;
+#navigate{
+    grid-area:nav;
+    background-color:grey;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: row;
+    background-image: url("../img/Apa-logga.png");
+    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:50%;
 }
-#article2{
-    grid-area:ar2;
-    background-color:cyan;
+#flex-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
 }
+#flex-wrapper a{
+    background-color:lightsalmon;
+    border: 5px solid black;
+    width: 200px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#menylänk{
+    position: fixed;
+    left: 300px;
+}
+#menylänk:hover{
+    transform: rotateZ(5deg)
+}
+#infolänk{
+    position: fixed;
+    right: 300px;
+}
+#infolänk:hover{
+    transform:rotatez(-5deg)
+}
+
 #start_footer{
     grid-area:fot;
-    background-color:brown;
-    font-size: 24px;
-    font-family: 'Times New Roman', serif;
+    background-color:black;
+    font-size: 30px;
+    font-family: cursive;
+    color: lightgray;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
