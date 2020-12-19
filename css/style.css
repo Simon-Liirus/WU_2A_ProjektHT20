@@ -55,10 +55,9 @@
     justify-content:space-around;
     flex-direction: row;
     background-image: url("../img/Apa-logga.png");
-    background-position: center;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-position:bottom;
     background-size:50%;
+    background-repeat: no-repeat;
 }
 #flex-wrapper{
     display:flex;
@@ -128,6 +127,10 @@
 align-items: center;
 justify-content: center;
 }
+#mat_huvud p{
+    border: 5px solid black;
+    background-color:green;
+}
 #tillbaks_till_huvud{
     grid-area:as1;
     border: 10px black solid;
@@ -141,13 +144,47 @@ justify-content: center
 }
 #mat_ap_bild{
     grid-area:as2;
-    background-color: lightsalmon;
+    background-image: url("../img/academedia_boysen.png");
+    background-size: 100%;
+    background-repeat:round;
+    filter: blur(4px);
+}
+#reklam_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reklam_text p{
+    border: 5px solid black;
+    background-color: lightblue;
+    position: fixed;
+    right: 15px;
+    top: 350px;
 }
 #mat_article{
     grid-area: art;
-    background-color: yellow;
+    background-image: url("../img/jungle-ett.jpg");
+}
+#mat_article p{
+    border:4px solid black;
+    background-color:lightgreen;
 }
 #mat_ap_animationer{
     grid-area:foo;
-    background-color:blue;
+    background-image: url("../img/jungle-två.jpg");
+    background-repeat: round;
+    display:flex;
+    align-items:center;
+    justify-content: left;
+}
+#ap_burgare{
+    position: right;
+    width: 300px;
+    height: 250px;
+}
+#ap_äter{
+    position: fixed;
+    right:256px;
+    width: 300px;
+    height: 250px;
 }
