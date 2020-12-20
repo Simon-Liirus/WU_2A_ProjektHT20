@@ -114,7 +114,7 @@
     grid-template-areas:
     "hea hea hea"
     "as1 art as2"
-    "foo foo as2"
+    "foo foo as2";
 }
 #mat_huvud{
     grid-area: hea;
@@ -124,8 +124,8 @@
     background-position: center;
     font-size: 42px;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 #mat_huvud p{
     border: 5px solid black;
@@ -139,8 +139,8 @@ justify-content: center;
     background-size: 100%;
     font-size:32px;
     display: flex;
-align-items: center;
-justify-content: center
+    align-items: center;
+    justify-content: center;
 }
 #mat_ap_bild{
     grid-area:as2;
@@ -187,4 +187,103 @@ justify-content: center
     right:256px;
     width: 300px;
     height: 250px;
+}
+#meny_wrapper{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2.5fr 2.5fr;
+    grid-template-areas:
+    "he he he"
+    "na ma ma"
+    "as me me";
+}
+#huvud_meny{
+    grid-area:he;
+    background-image: url("../img/MatAnkomst.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#huvud_meny p{
+    border: 5px solid black;
+    background-color:green;
+}
+#meny_nav{
+    grid-area:na;
+    border: 10px black solid;
+    background-image: url("../img/Jahopp-apan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size:32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main_flex_over{
+    grid-area:ma;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#main_flex_over article{
+    border: 5px solid black;
+}
+#main_flex_over p{
+    border: 5px solid black;
+    background-color:beige;
+}
+#main_flex_under{
+    grid-area:me;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#main_flex_under article{
+    border: 5px solid black;
+}
+#main_flex_under p{
+    border: 5px solid black;
+    background-color:beige;
+}
+.mat_låda{
+    width:150px;
+    height:150px;
+}
+#burgare_ett{
+    background-image: url("../img/burger_ett.jpg")
+}
+#burgare_två{
+    background-image: url("../img/burger_två.jpg")
+}
+#burgare_tre{
+    background-image: url("../img/quesadilla_tre.jpg")
+}
+#burgare_fyra{
+    background-image: url("../img/burger_fyra.jpg")
+}
+#burgare_fem{
+    background-image: url("../img/hot-dog-fem.jpg")
+}
+#burgare_sex{
+    background-image: url("../img/burger_sex.jpg")
+}
+#meny_reklam{
+    grid-area:as;
+    background-image: url("../img/academedia_boysen.png");
+    background-repeat:round;
+    filter: blur(4px);
+}
+#meny_reklam_text{
+    border: 5px solid black;
+    background-color: lightblue;
+    position: fixed;
+    left:50px;
+    bottom:110px;
 }
