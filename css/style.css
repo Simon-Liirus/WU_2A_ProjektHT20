@@ -54,7 +54,7 @@
     align-items:center;
     justify-content:space-around;
     flex-direction: row;
-    background-image: url("../img/Apa-logga.png");
+    background-image: url("../misc/Apa-logga.png");
     background-position:bottom;
     background-size:50%;
     background-repeat: no-repeat;
@@ -189,6 +189,10 @@
     height: 250px;
 }
 #meny_wrapper{
+    background-image: url("../img/Jungle_tre.jpg");
+    background-repeat:no-repeat;
+    background-size:84%;
+    background-position:right;
     display:grid;
     width:100vw;
     height:100vh;
@@ -235,10 +239,6 @@
 #main_flex_over article{
     border: 5px solid black;
 }
-#main_flex_over p{
-    border: 5px solid black;
-    background-color:beige;
-}
 #main_flex_under{
     grid-area:me;
     display:flex;
@@ -248,37 +248,40 @@
 #main_flex_under article{
     border: 5px solid black;
 }
-#main_flex_under p{
-    border: 5px solid black;
-    background-color:beige;
-}
 .mat_låda{
     width:150px;
     height:150px;
 }
 #burgare_ett{
-    background-image: url("../img/burger_ett.jpg")
+    background-image: url("../img/burger_ett.jpg");
+    background-repeat:round;
 }
 #burgare_två{
-    background-image: url("../img/burger_två.jpg")
+    background-image: url("../img/burger_två.jpg");
+    background-repeat:round;
 }
 #burgare_tre{
-    background-image: url("../img/quesadilla_tre.jpg")
+    background-image: url("../img/quesadilla_tre.jpg");
+    background-repeat:round;
 }
 #burgare_fyra{
-    background-image: url("../img/burger_fyra.jpg")
+    background-image: url("../img/burger_fyra.jpg");
+    background-repeat:round;
 }
 #burgare_fem{
-    background-image: url("../img/hot-dog-fem.jpg")
+    background-image: url("../img/hot-dog-fem.jpg");
+    background-repeat:round;
 }
 #burgare_sex{
-    background-image: url("../img/burger_sex.jpg")
+    background-image: url("../img/burger_sex.jpg");
+    background-repeat:round;
 }
 #meny_reklam{
     grid-area:as;
     background-image: url("../img/academedia_boysen.png");
     background-repeat:round;
-    filter: blur(4px);
+    background-size:110%;
+    filter: blur(3px);
 }
 #meny_reklam_text{
     border: 5px solid black;
@@ -287,3 +290,42 @@
     left:50px;
     bottom:110px;
 }
+#mat_beskrivning{
+    background-color:grey;
+}
+#mat_beskrivning p{
+    border: 5px solid black;
+    background-color: lightgoldenrodyellow;
+    width:150px;
+    height:50px;
+    overflow:hidden;
+}
+#beskrivning_ett{
+    position:fixed;
+    left:311px;
+    top:300px;
+}
+#beskrivning_två{
+    position:fixed;
+    right:453.5px;
+    top:300px;
+}
+#beskrivning_tre{
+    position:fixed;
+    right:98px;
+    top:300px;
+}
+#beskrivning_fyra{
+    position:fixed;
+    left:311px;
+    bottom:0px;
+}
+#beskrivning_fem{
+    position:fixed;
+    right:453.5px;
+    bottom:0px;
+}
+#beskrivning_sex{
+    position:fixed;
+    right:98px;
+    bottom:0px;
