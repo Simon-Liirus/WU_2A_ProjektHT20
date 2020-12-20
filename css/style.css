@@ -5,6 +5,7 @@
 }
 
 #start_grid_wrapper{
+    overflow: hidden;
     display:grid;
     width:100vw;
     height:100vh;
@@ -106,6 +107,7 @@
 
 
 #mat_grid_wrapper{
+    overflow: hidden;
     display:grid;
     width:100vw;
     height:100vh;
@@ -189,6 +191,7 @@
     height: 250px;
 }
 #meny_wrapper{
+    overflow: hidden;
     background-image: url("../img/Jungle_tre.jpg");
     background-repeat:no-repeat;
     background-size:84%;
